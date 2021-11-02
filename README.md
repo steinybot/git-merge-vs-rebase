@@ -11,7 +11,7 @@ The claim is that `git merge` has a better worst case number of conflicts than `
 Checkout branch `origin/stuff` as `merge`:
 
 ```shell
-git checkout -b merge origin/stuff
+git checkout -b merge origin/stuff --no-track
 ```
 
 Now merge in `origin/main`:
@@ -47,7 +47,7 @@ git commit
 Checkout branch `origin/stuff` as `rebase`:
 
 ```shell
-git checkout -b rebase origin/stuff
+git checkout -b rebase origin/stuff --no-track
 ```
 
 Now rebase onto `origin/main`:
@@ -82,3 +82,9 @@ The result of the third conflict should be:
 ...
 
 You get the point.
+
+Commit:
+
+```shell
+git commit
+```
