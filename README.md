@@ -69,9 +69,17 @@ The result of the first conflict should be:
 0, 1
 ```
 
+```shell
+git rebase --continue
+```
+
 The result of the second conflict should be:
 ```text
 0, 1, 2
+```
+
+```shell
+git rebase --continue
 ```
 
 The result of the third conflict should be:
@@ -83,8 +91,3 @@ The result of the third conflict should be:
 
 You get the point.
 
-Commit:
-
-```shell
-git commit
-```
